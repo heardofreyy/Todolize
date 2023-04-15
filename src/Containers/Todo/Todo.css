@@ -1,0 +1,53 @@
+.todo-head {
+    width: 100%;
+    background-color: var(--prime);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+}
+
+.todo-head .btns {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-head .btns button {
+    height: 32px;
+    width: 75px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+
+
+.add {
+    width: 120px;
+    height: 50px;
+    background-color: #3460b7;
+    font-size: 18px;
+}
+
+.todos {
+    width: 80%;
+    font-size: 24px;
+}
+
+.EdittingBtn {
+    display: none !important;
+}
+
+#done {
+    color: var(--check);
+}

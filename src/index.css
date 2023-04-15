@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+
+  --bg: #101010;
+  --text: #FDFFFF;
+  --prime: #b20c06;
+  --second: #212121;
+  --wrapper: #2828337e;
+  --trash: #871d1d;
+  --check: #4bc738;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Raleway';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  border: 0;
+  padding: left 10px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+input:focus {
+  border: 0;
+  outline: 0;
+  padding: left 10px;
+}
+
+button {
+  background-color: unset;
+  color: #f4f4f4;
+  border: 0;
+  font-family: 'Raleway';
+}
+
+button:hover {
+  scale: .975;
+}
+
+
+button:active {
+  opacity: .7;
+}

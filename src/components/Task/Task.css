@@ -1,0 +1,42 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: var(--second);
+    font-size: 18px; 
+}
+
+.task .left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.task .left h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.task .right {
+    display: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.task .right button {
+    font-size: 18px;
+    
+}
+
+.Edditing {
+    display: flex !important ;
+}
+
+.hiddenEdit {
+    display: none;
+}
