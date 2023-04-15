@@ -5,6 +5,7 @@ import { faUser, faGear } from '@fortawesome/free-solid-svg-icons'
 
 import './Header.css'
 import logo from '../../assets/Logo/Todolize-light.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -14,9 +15,9 @@ function Header() {
         </div>
         <div className="right">
             <nav>
-                <button>Home</button>
-                <button>List</button>
-                <button>About</button>
+                <Link to={'/'}><button className='button-nav'>Home</button></Link>
+                <Link to={'/list'}><button className='button-nav'>List</button></Link>
+                <Link to={'/about'}><button className='button-nav'>About</button></Link>
             </nav>
             <hr />
             <div className="btns">

@@ -1,8 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Todo from './Containers/Todo/Todo'
+
+//Components :
 import MainLayout from './Layout/MainLayout'
+import Todo from './Containers/Todo/Todo'
+import Home from './pages/Home'
 
 
 
@@ -12,7 +14,8 @@ function App() {
   return (
     <Routes>
       <Route element={<MainLayout/>}>
-        <Route path={'/'} element={<Todo/>}/>
+        <Route path={'/'} element={<Home/>}/>
+        <Route path={'/list'} element={<Todo/>}/>
       </Route>
 
 

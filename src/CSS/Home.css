@@ -1,0 +1,115 @@
+.Home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.Home .left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Home .left img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+.Home .left h1 {
+    font-size: 46px
+}
+
+.Home .left h1.first-text {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.Home .right img {
+    width: 500px;
+}
+
+
+.Home .left .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+/* -------  button list  -----------------------*/
+
+.button-hero {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+.button-hero {
+    --border-right: 6px;
+    --text-stroke-color:var(--text);
+    --animation-color: var(--prime);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.button-hero .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button-hero:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+/* -------  button getstarted  -----------------------*/
+
+.button-hero-getstarted {
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: var(--text);
+    -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+    clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+    height: 40px;
+    font-size: 0.9rem;
+    line-height: 14px;
+    letter-spacing: 1.2px;
+    transition: .2s .1s;
+    background-image: linear-gradient(90deg,var(--bg), var(--prime));
+    border: 0 solid;
+    overflow: hidden;
+  }
+  
+  .button-hero-getstarted:hover {
+    cursor: pointer;
+    transition: all .3s ease-in;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+
+  
