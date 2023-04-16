@@ -22,6 +22,7 @@ const AddTask = (props) => {
     return (
         <div className={props.isShown ? "wrapperAddTask ShownAddTask" : "wrapperAddTask"}>
             <div className='AddTask'>
+                <h1> Add New Task </h1>
                 <div className="input">
                     <h3>Task :</h3>
                     <input ref={inputRef} placeholder={'type a task'} onChange={(e) => setInputValue(e.target.value)} type="text" />

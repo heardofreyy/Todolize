@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 //Components :
 import MainLayout from './Layout/MainLayout'
-import Todo from './Containers/Todo/Todo'
+import Todo from './pages/Todo'
 import Home from './pages/Home'
 
 

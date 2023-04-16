@@ -2,10 +2,14 @@
     width: 100%;
     background-color: var(--prime);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px 15px;
+    border-bottom: 1px solid var(--bg);
 }
 
+.todo-head button.menu-btn {
+    font-size: 20px;
+}
 .todo-head .btns {
     display: flex;
     gap: 10px;
@@ -20,32 +24,36 @@
 
 .Todo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
+    height: calc(100vh - 121.8px);
     margin: 0 auto;
     gap: 20px;
-    padding: 20px;
+    padding:0 20px 0 0;
     
 }
 
 
 
-.add {
-    width: 120px;
-    height: 50px;
-    background-color: #3460b7;
-    font-size: 18px;
-}
-
 .todos {
+    margin-top: 20px;
     width: 80%;
     font-size: 24px;
 }
 
+.todos h1 {
+    margin:10px 0 30px 20px;
+    font-size: 32px;
+}
+
 .EdittingBtn {
     display: none !important;
+}
+
+.hidden-menu {
+    justify-content: flex-end;
 }
 
 #done {

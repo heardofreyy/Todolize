@@ -45,7 +45,7 @@ const EditTask = (props) => {
             <div className='EditTask'>
                 <h1>Update Task</h1>
                 <div className="input">
-                    <h3>Task :</h3>
+                    <h3>Edit Task :</h3>
                     <input ref={inputRef} value={inputValue} placeholder={'type a task'} onChange={(e) => setInputValue(e.target.value)} type="text" />
                 </div>
                 <div className="btns">
